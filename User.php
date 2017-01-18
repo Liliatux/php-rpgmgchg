@@ -17,10 +17,22 @@
 			return $this->createdAt;
 		}
 
-		public function __construct($newId, $newEmail, $newDate) {
-			$this->id = $newId;
+		public function setEmail($newEmail) {
 			$this->email = $newEmail;
+		}
+
+		public function setId($newId) {
+			$this->id = $newId;
+		}
+
+		public function setCreatedAt($newDate) {
 			$this->createdAt = $newDate;
+		}
+
+		public function __construct($newId, $newEmail, $newDate) {
+			$this->setId($newId);
+			$this->setEmail($newEmail);
+			$this->setCreatedAt($newDate);
 		}
 	}
 ?>

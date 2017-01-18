@@ -15,5 +15,23 @@
 		public function getPrice() {
 			return $this->price;
 		}
+
+		public function setId($newId) {
+			$this->id = $newId;
+		}
+
+		public function setName($newName) {
+			$this->id = $newName;
+		}
+
+		public function setPrice($newPrice) {
+			$this->id = $newPrice;
+		}
+
+		public function __construct($newId, $newName, $newPrice) {
+			$this->setId($newId);
+			$this->setName($newName);
+			$this->setPrice($newPrice);
+		}
 	}
 ?>

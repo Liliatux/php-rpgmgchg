@@ -11,14 +11,16 @@
 <body>
 	<table>
 		<tr>
-			<td>ID</td>
-			<td>Email</td>
-			<td>Crée le</td>
+			<th>ID</th>
+			<th>Email</th>
+			<th>Crée le</th>
 		</tr>
 		<?php foreach($users as $user): ?>
-			<tr><td><?=$user->getId(); ?></td>
-			<td><?= $user->getEmail(); ?></td>
-			<td><?= $user->getCreatedAt(); ?></td></tr>
+			<tr>
+				<td><?=$user->getId(); ?></td>
+				<td><?= $user->getEmail(); ?></td>
+				<td><?= $user->getCreatedAt(); ?></td>
+			</tr>
 		<?php endforeach; ?>
 	</table>
 </body>
