@@ -21,11 +21,11 @@
 		}
 
 		public function setName($newName) {
-			$this->id = $newName;
+			$this->name = $newName;
 		}
 
 		public function setPrice($newPrice) {
-			$this->id = $newPrice;
+			$this->price = $newPrice;
 		}
 
 		public function __construct($newId, $newName, $newPrice) {
