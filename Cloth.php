@@ -12,8 +12,13 @@
 			return $this->brand;
 		}
 
-		public function setBrand() {
-			$this->brand = 'lolita';
+		public function setBrand($newBrand) {
+			$this->brand = $newBrand;
+		}
+
+		public function __construct($newId, $newName, $newPrice, $newBrand) {
+			parent::__construct($newId, $newName, $newPrice);
+			$this->setBrand($newBrand);
 		}
 	}
 ?>

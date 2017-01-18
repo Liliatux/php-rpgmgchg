@@ -14,12 +14,12 @@
 			return $this->harvestedAt;
 		}
 
-		public function setProductorName() {
-			$this->productorName = 'Jean-Michel Crapeau';
+		public function setProductorName($newProductorName) {
+			$this->productorName = $newProductorName;
 		}
 
-		public function setHarvestedAt() {
-			$this->harvestedAt = date('d/m/Y', mktime(0, 0, 0, 7, 1, 2000));
+		public function setHarvestedAt($newHarvestedAt) {
+			$this->harvestedAt = $newHarvestedAt;
 		}
 
 		public function isFresh() {
@@ -28,6 +28,12 @@
 			}else {
 				return false;
 			}
+		}
+
+		public function __construct($newId, $newName, $newPrice, $newProductorName, $newHarvestedAt) {
+			parent::__construct($newId, $newName, $newPrice);
+			$this->setProductorName($newProductorName);
+			$this->setHarvestedAt($newHarvestedAt);
 		}
 	}
 ?>

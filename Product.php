@@ -25,7 +25,7 @@
 		}
 
 		public function setPrice($newPrice) {
-			$this->price = $newPrice;
+			$this->price = $newPrice.'€';
 		}
 
 		public function __construct($newId, $newName, $newPrice) {
