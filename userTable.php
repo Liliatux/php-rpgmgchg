@@ -1,4 +1,5 @@
 <?php
+	date_default_timezone_set('UTC');
 	$users = require('Users.php');
 ?>
 
@@ -15,11 +16,11 @@
 			<td>Email</td>
 			<td>Crée le</td>
 		</tr>
-		<tr><?php foreach($users as $user): ?>
-			<td><?= $users->$id; ?></td>
-			<td><?= $users->$email; ?></td>
-			<td><?= $users->$createdAt; ?></td>
-		<?php endforeach; ?></tr>
+		<?php foreach($users as $user): ?>
+			<tr><td><?=$user->getId(); ?></td>
+			<td><?= $user->getEmail(); ?></td>
+			<td><?= $user->getCreatedAt(); ?></td></tr>
+		<?php endforeach; ?>
 	</table>
 </body>
 </html>
