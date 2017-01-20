@@ -1,5 +1,5 @@
 <?php
-	$users = require('Users.php');
+	$users = require('users.php');
 ?>
 
 <!DOCTYPE html>
