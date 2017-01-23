@@ -6,7 +6,7 @@
 </head>
 <body>
 	<div>
-		<h2><?= $users[0]->getId(); ?></h2>
+		<h2><?= $clients[0]->buy($products[0]); ?></h2>
 	</div>
 </body>
 </html>

@@ -30,8 +30,9 @@
 			$this->name = $name;
 		}
 
+		//Prix en centimes
 		public function setPrice($price) {
-			$this->price = $price.'€';
+			$this->price = $price/100 .'€';
 		}
 	}
 ?>

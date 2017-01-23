@@ -15,9 +15,9 @@
 			];
 
 			$this->vetements = [
-				['vetement' => new Cloth('3', 'gant', '10.4', 'lolita')],
-				['vetement' => new Cloth('4', 'echarpe', '15.5', 'lempika')],
-				['vetement' => new Cloth('5', 'bonnet', '9.3', 'pikachu')]
+				['vetement' => new Cloth('3', 'gant', '104', 'lolita')],
+				['vetement' => new Cloth('4', 'echarpe', '155', 'lempika')],
+				['vetement' => new Cloth('5', 'bonnet', '93', 'pikachu')]
 			];
 		}
 
