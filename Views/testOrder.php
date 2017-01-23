@@ -1,8 +1,3 @@
-<?php
-	$users = require('users.php');
-	$products = require('products.php');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

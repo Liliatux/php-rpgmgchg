@@ -1,7 +1,3 @@
-<?php
-	$users = require('users.php');
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
