@@ -14,11 +14,11 @@
 			<th>Email</th>
 			<th>Crée le</th>
 		</tr>
-		<?php foreach($clients as $client): ?>
+		<?php foreach($users as $user): ?>
 			<tr>
-				<td><?=$client['client']->getId(); ?></td>
-				<td><?= $client['client']->getEmail(); ?></td>
-				<td><?= $client['client']->getCreatedAt(); ?></td>
+				<td><?=$user['user']->getId(); ?></td>
+				<td><?= $user['user']->getEmail(); ?></td>
+				<td><?= $user['user']->getCreatedAt(); ?></td>
 			</tr>
 		<?php endforeach; ?>
 	</table>

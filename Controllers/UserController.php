@@ -1,10 +1,10 @@
 <?php 
-	require __DIR__ .'/../Models/Users.php';
+	require_once __DIR__ .'/../Data/Users.php';
 
 	class UserController {
 		public function userTable() {
 			$user = new Users();
-			$clients = $user->getClients();
+			$users = $user->getUsers();
 			require __DIR__ .'/../Views/userTable.php';
 		}
 	}

@@ -1,5 +1,5 @@
 <?php
-	require __DIR__ .'/../Models/Products.php';
+	require_once __DIR__ .'/../Data/Products.php';
 
 	class ProductController {
 		public function productTable() {
