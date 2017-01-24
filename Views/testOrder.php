@@ -7,19 +7,55 @@
 </head>
 <body>
 	<div>
-		<h1>Client <?= $users[0]['user']->getId(); ?></h1>
-		<?php $users[0]['user']->buy($legumes[0]['legume']); ?>
+		<h2>Panier du client <?= $users[0]->getId(); ?></h2>
+		<?php $users[0]->buy($legumes[0]); ?>
 		<table class="ui table">
 			<tr>
 				<th>Nom des produits</th>
 				<th>Prix</th>
+				<th>Total</th>
 			</tr>
 			<tr>
-				<td><?= $legumes[0]['legume']->getName(); ?></td>
-				<td><?= $legumes[0]['legume']->getPrice(); ?></td>
+				<td><?= $legumes[0]->getName(); ?></td>
+				<td><?= $legumes[0]->getPrice(); ?></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td><?= $users[0]->getBillAmont(); ?> €</td>
 			</tr>
 		</table>
-		<span>Total: <?= $users[0]['user']->getBillAmont(); ?> €</span>
+	</div>
+	<br>
+	<div>
+		<h2>Panier du client <?= $users[1]->getId(); ?></h2>
+		<?php 
+			$users[1]->buy($legumes[1]); 
+			$users[1]->buy($vetements[0]);
+		?>
+		<table class="ui table">
+			<tr>
+				<th>Nom des produits</th>
+				<th>Prix</th>
+				<th>Total</th>
+			</tr>
+			<tr>
+				<td><?= $legumes[1]->getName(); ?></td>
+				<td><?= $legumes[1]->getPrice(); ?></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><?= $vetements[0]->getName(); ?></td>
+				<td><?= $vetements[0]->getPrice(); ?></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td><?= $users[1]->getBillAmont(); ?> €</td>
+			</tr>
+		</table>
 	</div>
 </body>
 </html>

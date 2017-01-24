@@ -16,9 +16,9 @@
 		</tr>
 		<?php foreach($users as $user): ?>
 			<tr>
-				<td><?=$user['user']->getId(); ?></td>
-				<td><?= $user['user']->getEmail(); ?></td>
-				<td><?= $user['user']->getCreatedAt(); ?></td>
+				<td><?=$user->getId(); ?></td>
+				<td><?= $user->getEmail(); ?></td>
+				<td><?= $user->getCreatedAt(); ?></td>
 			</tr>
 		<?php endforeach; ?>
 	</table>

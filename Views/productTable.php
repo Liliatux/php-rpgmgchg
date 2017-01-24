@@ -19,22 +19,22 @@
 		</tr>
 		<?php foreach($legumes as $legume): ?>
 			<tr>
-				<td><?= $legume['legume']->getId(); ?></td>
-				<td><?= $legume['legume']->getName(); ?></td>
-				<td><?= $legume['legume']->getPrice(); ?></td>
-				<td><?= $legume['legume']->getProductorName(); ?></td>
-				<td><?= $legume['legume']->getHarvestedAt();?></td>
-				<td><?= (method_exists($legume, 'getBrand')) ? $legume['legume']->getBrand() : null; ?></td>
+				<td><?= $legume->getId(); ?></td>
+				<td><?= $legume->getName(); ?></td>
+				<td><?= $legume->getPrice(); ?></td>
+				<td><?= $legume->getProductorName(); ?></td>
+				<td><?= $legume->getHarvestedAt();?></td>
+				<td><?= (method_exists($legume, 'getBrand')) ? $legume->getBrand() : null; ?></td>
 			</tr>
 		<?php endforeach; ?>
 		<?php foreach($vetements as $vetement): ?>
 			<tr>
-				<td><?= $vetement['vetement']->getId(); ?></td>
-				<td><?= $vetement['vetement']->getName(); ?></td>
-				<td><?= $vetement['vetement']->getPrice(); ?></td>
-				<td><?= (method_exists($vetement, 'getProductorName')) ? $vetement['vetement']->getProductorName() : null; ?></td>
-				<td><?= (method_exists($vetement, 'getHarvestedAt')) ? $vetement['vetement']->getHarvestedAt() : null; ?></td>
-				<td><?= $vetement['vetement']->getBrand();?></td>
+				<td><?= $vetement->getId(); ?></td>
+				<td><?= $vetement->getName(); ?></td>
+				<td><?= $vetement->getPrice(); ?></td>
+				<td><?= (method_exists($vetement, 'getProductorName')) ? $vetement->getProductorName() : null; ?></td>
+				<td><?= (method_exists($vetement, 'getHarvestedAt')) ? $vetement->getHarvestedAt() : null; ?></td>
+				<td><?= $vetement->getBrand();?></td>
 			</tr>
 		<?php endforeach; ?>
 	</table>
